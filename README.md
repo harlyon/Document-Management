@@ -2,7 +2,7 @@
 ## Background Information
 Document management system is an application used to track, manage and store documents.
 <div align="center">
-    <img src="https://github.com/harlyon/Document-Management/blob/master/FireShot%20Capture%20013%20-%20React%20App%20-%20localhost.png" width="400px"</img> 
+    <img src="https://github.com/harlyon/Document-Management/blob/master/FireShot%20Capture%20013%20-%20React%20App%20-%20localhost.png" width="1000px"</img> 
 </div>
 ## Features
 * Users can sign up/ log into the application
