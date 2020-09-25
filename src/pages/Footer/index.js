@@ -8,31 +8,22 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
               <a href="#" className="logo-footer">
-                <img src="images/logo-light.png" height={24} alt="" />
+                <img src="https://static-cdn.pixlr.com/images/index/squared.png" height={74} alt="" />
               </a>
-              <p className="mt-4">Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+              <p className="mt-4">Start working with Squared that can provide everything you need to manage and share documents with everyone, peers, collegues etc.</p>
             </div>
             <div className="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <h4 className="text-light footer-head">Company</h4>
+              <h4 className="text-light footer-head">Links</h4>
               <ul className="list-unstyled footer-list mt-4">
-                <li><a href="page-aboutus.html" className="text-foot"> About us</a></li>
-                <li><a href="page-services.html" className="text-foot"> Services</a></li>
-                <li><a href="page-team.html" className="text-foot">Team</a></li>
-                <li><a href="page-pricing.html" className="text-foot">Pricing</a></li>
-                <li><a href="page-work-modern.html" className="text-foot"> Project</a></li>
-                <li><a href="page-jobs.html" className="text-foot"> Careers</a></li>
-                <li><a href="page-blog-grid.html" className="text-foot">Blog</a></li>
+                <li><a href="page-pricing.html" className="text-foot">Register</a></li>
                 <li><a href="auth-cover-login.html" className="text-foot"> Login</a></li>
               </ul>
             </div>{/*end col*/}
             <div className="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <h4 className="text-light footer-head">Usefull Links</h4>
+              <h4 className="text-light footer-head">Useful Links</h4>
               <ul className="list-unstyled footer-list mt-4">
                 <li><a href="page-terms.html" className="text-foot"> Terms of Services</a></li>
                 <li><a href="page-privacy.html" className="text-foot">Privacy Policy</a></li>
-                <li><a href="documentation.html" className="text-foot"> Documentation</a></li>
-                <li><a href="changelog.html" className="text-foot"> Changelog</a></li>
-                <li><a href="components.html" className="text-foot"> Components</a></li>
               </ul>
             </div>{/*end col*/}
             <div className="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
@@ -62,7 +53,7 @@ const Footer = () => {
           <div className="col-sm-6">
             <div className="text-sm-left">
               <p className="mb-0">
-                © 2019-20
+                © 2019-2021 | .
                 <a
                   href="/"
                   target="_blank"
@@ -70,7 +61,6 @@ const Footer = () => {
                 >
                   Harry
                 </a>
-                .
               </p>
             </div>
           </div>
