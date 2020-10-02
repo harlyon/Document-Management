@@ -75,7 +75,7 @@ const Sidebar = () => {
                 <h5 className="widget-title">My Socials :</h5>
                 <ul className="list-unstyled social-icon mb-0 mt-4">
                   <li className="list-inline-item mr-2">
-                    <a href="javascript:void(0)" className="rounded">
+                    <a href="/" className="rounded">
                       <i
                         data-feather="facebook"
                         className="fa fa-facebook"
@@ -83,7 +83,7 @@ const Sidebar = () => {
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">
-                    <a href="javascript:void(0)" className="rounded">
+                    <a href="/" className="rounded">
                       <i
                         data-feather="instagram"
                         className="fa fa-instagram"
@@ -91,7 +91,7 @@ const Sidebar = () => {
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">
-                    <a href="javascript:void(0)" className="rounded">
+                    <a href="/" className="rounded">
                       <i
                         data-feather="twitter"
                         className="fa fa-twitter"
@@ -99,7 +99,7 @@ const Sidebar = () => {
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">
-                    <a href="javascript:void(0)" className="rounded">
+                    <a href="/" className="rounded">
                       <i
                         data-feather="linkedin"
                         className="fa fa-linkedin"
@@ -107,12 +107,12 @@ const Sidebar = () => {
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">
-                    <a href="javascript:void(0)" className="rounded">
+                    <a href="/" className="rounded">
                       <i data-feather="github" className="fa fa-github" />
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">
-                    <a href="javascript:void(0)" className="rounded">
+                    <a href="/" className="rounded">
                       <i
                         data-feather="youtube"
                         className="fa fa-youtube"
@@ -120,7 +120,7 @@ const Sidebar = () => {
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">
-                    <a href="javascript:void(0)" className="rounded">
+                    <a href="/" className="rounded">
                       <i data-feather="gitlab" className="fa fa-github" />
                     </a>
                   </li>

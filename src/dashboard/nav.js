@@ -5,7 +5,7 @@ const Navigation = () => {
     <header id="topnav" className="defaultscroll sticky">
       <div className="container">
         <div>
-          <a className="logo" href="#">
+          <a className="logo" href="/">
             <img src="https://static-cdn.pixlr.com/images/index/squared.png" height={24} alt="" />
           </a>
         </div>
