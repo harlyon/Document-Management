@@ -10,7 +10,7 @@ const Dashboard = () => {
         </div>
         <div className="row">
           <div className="col-md-6 mt-4 pt-2">
-            <a href="javascript:void(0)">
+            <a href="/">
               <div className="card rounded shadow bg-light border-0">
                 <div className="card-body">
                   <div className="mt-4">
@@ -24,7 +24,7 @@ const Dashboard = () => {
             </a>
           </div>
           <div className="col-md-6 mt-4 pt-2">
-            <a href="javascript:void(0)">
+            <a href="/">
               <div className="card rounded shadow bg-light border-0">
                 <div className="card-body">
                   <div className="mt-4">

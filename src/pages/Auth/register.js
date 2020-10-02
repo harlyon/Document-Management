@@ -48,7 +48,7 @@ const Register = () => {
                           <div className="form-group">
                             <div className="custom-control custom-checkbox">
                               <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                              <label className="custom-control-label" htmlFor="customCheck1">I Accept <a href="#" className="text-primary">Terms And Condition</a></label>
+                              <label className="custom-control-label" htmlFor="customCheck1">I Accept <a href="/" className="text-primary">Terms And Condition</a></label>
                             </div>
                           </div>
                         </div>

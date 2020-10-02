@@ -39,7 +39,7 @@ const SecondSection = () => {
                   Create your own skin to match your brand
                 </li>
               </ul>
-              <a href="javascript:void(0)" className="mt-3 h6 text-primary">
+              <a href="/" className="mt-3 h6 text-primary">
                 Find Out More <i className="mdi mdi-chevron-right" />
               </a>
             </div>

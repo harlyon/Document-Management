@@ -23,7 +23,7 @@ const Header = () => {
                     <img
                       src="http://shreethemes.in/landrick/layouts/images/client/05.jpg"
                       className="avatar avatar-large rounded-circle shadow d-block mx-auto"
-                      alt
+                      alt=""
                     />
                   </div>
                   <div className="col-lg-10 col-md-9">
@@ -34,7 +34,7 @@ const Header = () => {
                         <ul className="list-inline mb-0 mt-3">
                           <li className="list-inline-item mr-2">
                             <a
-                              href="javascript:void(0)"
+                              href="/"
                               className="text-muted"
                               title="Instagram"
                             >
@@ -47,7 +47,7 @@ const Header = () => {
                           </li>
                           <li className="list-inline-item">
                             <a
-                              href="javascript:void(0)"
+                              href="/"
                               className="text-muted"
                               title="Linkedin"
                             >
@@ -64,7 +64,7 @@ const Header = () => {
                         <ul className="list-unstyled social-icon social mb-0 mt-4">
                           <li className="list-inline-item mr-2">
                             <a
-                              href="javascript:void(0)"
+                              href="/"
                               className="rounded"
                               data-toggle="tooltip"
                               data-placement="bottom"
@@ -78,7 +78,7 @@ const Header = () => {
                           </li>
                           <li className="list-inline-item mr-2">
                             <a
-                              href="javascript:void(0)"
+                              href="/"
                               className="rounded"
                               data-toggle="tooltip"
                               data-placement="bottom"
@@ -92,7 +92,7 @@ const Header = () => {
                           </li>
                           <li className="list-inline-item mr-2">
                             <a
-                              href="javascript:void(0)"
+                              href="/"
                               className="rounded"
                               data-toggle="tooltip"
                               data-placement="bottom"

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-              <a href="#" className="logo-footer">
+              <a href="/" className="logo-footer">
                 <img src="https://static-cdn.pixlr.com/images/index/squared.png" height={74} alt="" />
               </a>
               <p className="mt-4">Start working with Squared that can provide everything you need to manage and share documents with everyone, peers, collegues etc.</p>
@@ -68,53 +68,48 @@ const Footer = () => {
           <div className="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
             <ul className="list-unstyled text-sm-right mb-0">
               <li className="list-inline-item">
-                <a href="javascript:void(0)">
+                <a href="/">
                   <img
                     src="http://shreethemes.in/landrick/layouts/images/payments/american-ex.png"
                     className="avatar avatar-ex-sm"
                     title="American Express"
-                    alt
-                  />
+                    alt=""                 />
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="javascript:void(0)">
+                <a href="/">
                   <img
                     src="http://shreethemes.in/landrick/layouts/images/payments/discover.png"
                     className="avatar avatar-ex-sm"
                     title="Discover"
-                    alt
-                  />
+                    alt=""                 />
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="javascript:void(0)">
+                <a href="/">
                   <img
                     src="http://shreethemes.in/landrick/layouts/images/payments/master-card.png"
                     className="avatar avatar-ex-sm"
                     title="Master Card"
-                    alt
-                  />
+                    alt=""                 />
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="javascript:void(0)">
+                <a href="/">
                   <img
                     src="http://shreethemes.in/landrick/layouts/images/payments/paypal.png"
                     className="avatar avatar-ex-sm"
                     title="Paypal"
-                    alt
-                  />
+                    alt=""                 />
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="javascript:void(0)">
+                <a href="/">
                   <img
                     src="http://shreethemes.in/landrick/layouts/images/payments/visa.png"
                     className="avatar avatar-ex-sm"
                     title="Visa"
-                    alt
-                  />
+                    alt=""                 />
                 </a>
               </li>
             </ul>

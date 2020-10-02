@@ -28,7 +28,7 @@ const data = {
 const Chart = () => {
   return (
   <div className="col-md-12 mt-4 pt-2">
-  <a href="javascript:void(0)">
+  <a href="/">
     <div className="card rounded shadow bg-light border-0">
       <div className="card-body">
         <div className="mt-4">

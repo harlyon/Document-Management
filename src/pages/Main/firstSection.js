@@ -11,7 +11,7 @@ const FirstSection = () => {
                 <img
                   src="http://shreethemes.in/landrick/layouts/images/icon/clipboard.svg"
                   className="avatar avatar-small"
-                  alt
+                  alt=""
                 />
               </div>
               <div className="content mt-4">
@@ -29,7 +29,7 @@ const FirstSection = () => {
                 <img
                   src="http://shreethemes.in/landrick/layouts/images/icon/shield.svg"
                   className="avatar avatar-small"
-                  alt
+                  alt=""
                 />
               </div>
               <div className="content mt-4">
@@ -47,7 +47,7 @@ const FirstSection = () => {
                 <img
                   src="http://shreethemes.in/landrick/layouts/images/icon/vector.svg"
                   className="avatar avatar-small"
-                  alt
+                  alt=""
                 />
               </div>
               <div className="content mt-4">
