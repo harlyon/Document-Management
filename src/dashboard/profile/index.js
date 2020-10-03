@@ -18,7 +18,7 @@ const Profile = () => {
                 <i data-feather="mail" className="fea icon-ex-md text-muted mr-3" />
                 <div className="media-body">
                   <h6 className="text-primary mb-0">Name :</h6>
-                  <a href="javascript:void(0)" className="text-muted">
+                  <a href="/" className="text-muted">
                    Krista Joseph
                   </a>
                 </div>
@@ -27,7 +27,7 @@ const Profile = () => {
                 <i data-feather="mail" className="fea icon-ex-md text-muted mr-3" />
                 <div className="media-body">
                   <h6 className="text-primary mb-0">Username :</h6>
-                  <a href="javascript:void(0)" className="text-muted">
+                  <a href="/" className="text-muted">
                     kristaj33
                   </a>
                 </div>
@@ -36,7 +36,7 @@ const Profile = () => {
                 <i data-feather="mail" className="fea icon-ex-md text-muted mr-3" />
                 <div className="media-body">
                   <h6 className="text-primary mb-0">Email :</h6>
-                  <a href="javascript:void(0)" className="text-muted">
+                  <a href="/" className="text-muted">
                     kristajoseph0203@mail.com
                   </a>
                 </div>
@@ -55,7 +55,7 @@ const Profile = () => {
                 />
                 <div className="media-body">
                   <h6 className="text-primary mb-0">Location :</h6>
-                  <a href="javascript:void(0)" className="text-muted">
+                  <a href="/" className="text-muted">
                     Beijing, China
                   </a>
                 </div>
@@ -67,7 +67,7 @@ const Profile = () => {
                 />
                 <div className="media-body">
                   <h6 className="text-primary mb-0">Cell No :</h6>
-                  <a href="javascript:void(0)" className="text-muted">
+                  <a href="/" className="text-muted">
                     (+12) 1254-56-4896
                   </a>
                 </div>

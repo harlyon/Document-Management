@@ -1,4 +1,5 @@
 import React from 'react';
+import task from '../../assets/task.svg'
 
 const SecondSection = () => {
   return (
@@ -6,7 +7,7 @@ const SecondSection = () => {
       <div className="container mt-10 mt-10">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-6 order-1 order-md-2">
-            <img src="http://shreethemes.in/landrick/layouts/images/task/task.svg" className="img-fluid" alt="task" />
+            <img src={task} className="img-fluid" alt="task" />
           </div>
           {/*end col*/}
           <div className="col-lg-6 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0 order-2 order-md-1">
