@@ -1,4 +1,5 @@
 import React from 'react';
+import header from '../../assets/header.png'
 
 const Main = () => {
   return (
@@ -6,7 +7,7 @@ const Main = () => {
       <div className="container">
         <div className="row justify-content-center mt-5">
           <div className="col-lg-7 col-md-7 text-center">
-            <img src="http://shreethemes.in/landrick/layouts/images/marketing/marketing.png" className="img-fluid" style={{maxHeight: '400px'}} alt="" />
+            <img src={header} className="img-fluid" style={{maxHeight: '400px'}} alt="" />
             {/* <img src="https://static-cdn.pixlr.com/images/index/squared.png" alt="" /> //OPTIONAL IMAGE */}
             <div className="title-heading mt-0 mt-md-5 mt-4 mt-sm-0 pt-2 pt-sm-0">
               <h1 className="heading mb-3"> A Better Way to Manage your Documents</h1>

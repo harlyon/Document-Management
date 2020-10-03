@@ -1,4 +1,5 @@
 import React from 'react';
+import login from '../../assets/login.jpg'
 
 const Login = () => {
   return (
@@ -51,7 +52,7 @@ const Login = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-8 offset-lg-4 padding-less img order-1" style={{backgroundImage: `url(${'http://shreethemes.in/landrick/layouts/images/user/01.jpg'})`}} data-jarallax="{&quot;speed&quot;: 0.5}" />
+          <div className="col-lg-8 offset-lg-4 padding-less img order-1" style={{backgroundImage: `url(${login})`}} data-jarallax="{&quot;speed&quot;: 0.5}" />
         </div>
       </div>
     </section>

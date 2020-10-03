@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png'
 
 const Navigation = () => {
   return (
@@ -6,7 +7,7 @@ const Navigation = () => {
       <div className="container">
         <div>
           <a className="logo" href="/">
-            <img src="https://static-cdn.pixlr.com/images/index/squared.png" height={24} alt="" />
+            <img src={logo} height={24} alt="" />
           </a>
         </div>
         <div className="buy-button">

@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../assets/logo.png'
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
               <a href="/" className="logo-footer">
-                <img src="https://static-cdn.pixlr.com/images/index/squared.png" height={74} alt="" />
+                <img src={logo} height={74} alt="" />
               </a>
               <p className="mt-4">Start working with Squared that can provide everything you need to manage and share documents with everyone, peers, collegues etc.</p>
             </div>

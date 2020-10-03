@@ -1,4 +1,5 @@
 import React from 'react';
+import register from '../../assets/register.jpg'
 
 const Register = () => {
   return (
@@ -66,7 +67,7 @@ const Register = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-8 offset-lg-4 padding-less img order-1" style={{backgroundImage: `url(${'http://shreethemes.in/landrick/layouts/images/user/02.jpg'})`}} data-jarallax="{&quot;speed&quot;: 0.5}" />
+        <div className="col-lg-8 offset-lg-4 padding-less img order-1" style={{backgroundImage: `url(${register})`}} data-jarallax="{&quot;speed&quot;: 0.5}" />
       </div>
     </div>
   </section>

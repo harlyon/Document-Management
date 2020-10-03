@@ -1,6 +1,8 @@
 import React from 'react';
 import Navigation from './nav';
 import Sidebar from './sidebar';
+import avatar from '../assets/avatar.jpg'
+import background from '../assets/background.png'
 
 const Header = () => {
   return (
@@ -8,7 +10,7 @@ const Header = () => {
     <Navigation />
     <section
       className="bg-profile d-table w-100"
-      style={{ background: 'url("http://shreethemes.in/landrick/layouts/images/account/bg.png") center center' }}
+      style={{ background: `url(${background})` }}
     >
       <div className="container">
         <div className="row">
@@ -21,7 +23,7 @@ const Header = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-2 col-md-3 text-md-left text-center">
                     <img
-                      src="http://shreethemes.in/landrick/layouts/images/client/05.jpg"
+                      src={avatar}
                       className="avatar avatar-large rounded-circle shadow d-block mx-auto"
                       alt=""
                     />

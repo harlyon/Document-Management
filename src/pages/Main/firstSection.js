@@ -1,4 +1,7 @@
 import React from 'react';
+import clipboard from '../../assets/clipboard.svg'
+import vector from '../../assets/vector.svg'
+import shield from '../../assets/shield.svg'
 
 const FirstSection = () => {
   return (
@@ -9,7 +12,7 @@ const FirstSection = () => {
             <div className="features text-center">
               <div className="image position-relative d-inline-block">
                 <img
-                  src="http://shreethemes.in/landrick/layouts/images/icon/clipboard.svg"
+                  src={clipboard}
                   className="avatar avatar-small"
                   alt=""
                 />
@@ -27,7 +30,7 @@ const FirstSection = () => {
             <div className="features text-center">
               <div className="image position-relative d-inline-block">
                 <img
-                  src="http://shreethemes.in/landrick/layouts/images/icon/shield.svg"
+                  src={shield}
                   className="avatar avatar-small"
                   alt=""
                 />
@@ -45,7 +48,7 @@ const FirstSection = () => {
             <div className="features text-center">
               <div className="image position-relative d-inline-block">
                 <img
-                  src="http://shreethemes.in/landrick/layouts/images/icon/vector.svg"
+                  src={vector}
                   className="avatar avatar-small"
                   alt=""
                 />
