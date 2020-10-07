@@ -1,5 +1,5 @@
-import React from 'react';
-import Chart from './charts'
+import React from "react";
+import Chart from "./charts";
 
 const Dashboard = () => {
   return (

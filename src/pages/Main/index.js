@@ -1,7 +1,7 @@
-import React from 'react';
-import FirstSection from './firstSection';
-import Main from './main';
-import SecondSection from './secondSection';
+import React from "react";
+import FirstSection from "./firstSection";
+import Main from "./main";
+import SecondSection from "./secondSection";
 
 const MainPage = () => {
   return (

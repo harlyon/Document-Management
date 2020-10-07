@@ -1,6 +1,6 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom'
-import Dashboard from './dashboard';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import Dashboard from "./dashboard";
 // import Profile from './profile';
 
 const Sidebar = () => {
@@ -17,22 +17,23 @@ const Sidebar = () => {
                     to="/"
                     className="col-6 mt-4 pt-2 accounts rounded d-block shadow text-center py-3"
                   >
-                      <span className="pro-icons h3 text-muted">
-                        <i className="fa fa-user-o" />
-                      </span>
-                      <h6 className="title text-dark h6 my-0">Profile</h6>
+                    <span className="pro-icons h3 text-muted">
+                      <i className="fa fa-user-o" />
+                    </span>
+                    <h6 className="title text-dark h6 my-0">Profile</h6>
                   </NavLink>
-                  <div className="col-6 mt-4 pt-2"
-                  >
-                     <a
+                  <div className="col-6 mt-4 pt-2">
+                    <a
                       href="account-works.html"
                       className="accounts rounded d-block shadow text-center py-3"
                     >
                       <span className="pro-icons h3 text-muted">
                         <i className="fa fa-file-o" />
                       </span>
-                      <h6 className="title text-dark h6 my-0">Personal Documents</h6>
-                      </a>
+                      <h6 className="title text-dark h6 my-0">
+                        Personal Documents
+                      </h6>
+                    </a>
                   </div>
                   {/*end col*/}
                   <div className="col-6 mt-4 pt-2">
@@ -43,7 +44,9 @@ const Sidebar = () => {
                       <span className="pro-icons h3 text-muted">
                         <i className="fa fa-list-alt" />
                       </span>
-                      <h6 className="title text-dark h6 my-0">Public Documents</h6>
+                      <h6 className="title text-dark h6 my-0">
+                        Public Documents
+                      </h6>
                     </a>
                   </div>
                   {/*end col*/}
@@ -76,34 +79,22 @@ const Sidebar = () => {
                 <ul className="list-unstyled social-icon mb-0 mt-4">
                   <li className="list-inline-item mr-2">
                     <a href="/" className="rounded">
-                      <i
-                        data-feather="facebook"
-                        className="fa fa-facebook"
-                      />
+                      <i data-feather="facebook" className="fa fa-facebook" />
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">
                     <a href="/" className="rounded">
-                      <i
-                        data-feather="instagram"
-                        className="fa fa-instagram"
-                      />
+                      <i data-feather="instagram" className="fa fa-instagram" />
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">
                     <a href="/" className="rounded">
-                      <i
-                        data-feather="twitter"
-                        className="fa fa-twitter"
-                      />
+                      <i data-feather="twitter" className="fa fa-twitter" />
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">
                     <a href="/" className="rounded">
-                      <i
-                        data-feather="linkedin"
-                        className="fa fa-linkedin"
-                      />
+                      <i data-feather="linkedin" className="fa fa-linkedin" />
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">
@@ -113,10 +104,7 @@ const Sidebar = () => {
                   </li>
                   <li className="list-inline-item mr-2">
                     <a href="/" className="rounded">
-                      <i
-                        data-feather="youtube"
-                        className="fa fa-youtube"
-                      />
+                      <i data-feather="youtube" className="fa fa-youtube" />
                     </a>
                   </li>
                   <li className="list-inline-item mr-2">

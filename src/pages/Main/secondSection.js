@@ -1,5 +1,5 @@
-import React from 'react';
-import task from '../../assets/task.svg'
+import React from "react";
+import task from "../../assets/task.svg";
 
 const SecondSection = () => {
   return (
@@ -20,9 +20,9 @@ const SecondSection = () => {
               </h4>
               <p className="text-muted">
                 Due to its widespread use as filler text for layouts,
-                non-readability is of great importance: human perception is tuned to
-                recognize certain patterns and repetitions in texts. If the
-                distribution of letters visual impact.
+                non-readability is of great importance: human perception is
+                tuned to recognize certain patterns and repetitions in texts. If
+                the distribution of letters visual impact.
               </p>
               <ul className="list-unstyled text-muted">
                 <li>
@@ -60,11 +60,14 @@ const SecondSection = () => {
               </h4>
               <p className="text-muted para-desc mb-0 mx-auto">
                 Start working with{" "}
-                <span className="text-primary font-weight-bold">Landrick</span> that
-                can provide everything you need to generate awareness, drive
-                traffic, connect.
+                <span className="text-primary font-weight-bold">Landrick</span>{" "}
+                that can provide everything you need to generate awareness,
+                drive traffic, connect.
               </p>
-              <a href="page-contact-two.html" className="btn btn-primary mt-4"> Contact us</a>
+              <a href="page-contact-two.html" className="btn btn-primary mt-4">
+                {" "}
+                Contact us
+              </a>
             </div>
           </div>
           {/*end col*/}

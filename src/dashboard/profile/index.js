@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Profile = () => {
   return (
@@ -15,16 +15,22 @@ const Profile = () => {
             <h5>Personal Details :</h5>
             <div className="mt-4">
               <div className="media align-items-center">
-                <i data-feather="mail" className="fea icon-ex-md text-muted mr-3" />
+                <i
+                  data-feather="mail"
+                  className="fea icon-ex-md text-muted mr-3"
+                />
                 <div className="media-body">
                   <h6 className="text-primary mb-0">Name :</h6>
                   <a href="/" className="text-muted">
-                   Krista Joseph
+                    Krista Joseph
                   </a>
                 </div>
               </div>
               <div className="media align-items-center mt-4">
-                <i data-feather="mail" className="fea icon-ex-md text-muted mr-3" />
+                <i
+                  data-feather="mail"
+                  className="fea icon-ex-md text-muted mr-3"
+                />
                 <div className="media-body">
                   <h6 className="text-primary mb-0">Username :</h6>
                   <a href="/" className="text-muted">
@@ -33,7 +39,10 @@ const Profile = () => {
                 </div>
               </div>
               <div className="media align-items-center mt-4">
-                <i data-feather="mail" className="fea icon-ex-md text-muted mr-3" />
+                <i
+                  data-feather="mail"
+                  className="fea icon-ex-md text-muted mr-3"
+                />
                 <div className="media-body">
                   <h6 className="text-primary mb-0">Email :</h6>
                   <a href="/" className="text-muted">
@@ -42,7 +51,10 @@ const Profile = () => {
                 </div>
               </div>
               <div className="media align-items-center mt-3">
-                <i data-feather="gift" className="fea icon-ex-md text-muted mr-3" />
+                <i
+                  data-feather="gift"
+                  className="fea icon-ex-md text-muted mr-3"
+                />
                 <div className="media-body">
                   <h6 className="text-primary mb-0">Birthday :</h6>
                   <p className="text-muted mb-0">2nd March, 1996</p>

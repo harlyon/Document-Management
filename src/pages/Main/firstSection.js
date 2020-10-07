@@ -1,7 +1,7 @@
-import React from 'react';
-import clipboard from '../../assets/clipboard.svg'
-import vector from '../../assets/vector.svg'
-import shield from '../../assets/shield.svg'
+import React from "react";
+import clipboard from "../../assets/clipboard.svg";
+import vector from "../../assets/vector.svg";
+import shield from "../../assets/shield.svg";
 
 const FirstSection = () => {
   return (
@@ -11,11 +11,7 @@ const FirstSection = () => {
           <div className="col-md-4 col-12">
             <div className="features text-center">
               <div className="image position-relative d-inline-block">
-                <img
-                  src={clipboard}
-                  className="avatar avatar-small"
-                  alt=""
-                />
+                <img src={clipboard} className="avatar avatar-small" alt="" />
               </div>
               <div className="content mt-4">
                 <h4 className="title-2">Easy To Use</h4>
@@ -29,11 +25,7 @@ const FirstSection = () => {
           <div className="col-md-4 col-12 mt-5 mt-sm-0">
             <div className="features text-center">
               <div className="image position-relative d-inline-block">
-                <img
-                  src={shield}
-                  className="avatar avatar-small"
-                  alt=""
-                />
+                <img src={shield} className="avatar avatar-small" alt="" />
               </div>
               <div className="content mt-4">
                 <h4 className="title-2">Secure</h4>
@@ -47,17 +39,13 @@ const FirstSection = () => {
           <div className="col-md-4 col-12 mt-5 mt-sm-0">
             <div className="features text-center">
               <div className="image position-relative d-inline-block">
-                <img
-                  src={vector}
-                  className="avatar avatar-small"
-                  alt=""
-                />
+                <img src={vector} className="avatar avatar-small" alt="" />
               </div>
               <div className="content mt-4">
                 <h4 className="title-2">Flexible</h4>
                 <p className="text-muted mb-0">
-                  It seems that only fragments of the original text remain in only
-                  fragments the Lorem Ipsum texts used today.
+                  It seems that only fragments of the original text remain in
+                  only fragments the Lorem Ipsum texts used today.
                 </p>
               </div>
             </div>

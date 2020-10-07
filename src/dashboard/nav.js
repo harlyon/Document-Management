@@ -1,5 +1,5 @@
-import React from 'react';
-import logo from '../assets/logo.png'
+import React from "react";
+import logo from "../assets/logo.png";
 
 const Navigation = () => {
   return (
@@ -11,7 +11,9 @@ const Navigation = () => {
           </a>
         </div>
         <div className="buy-button">
-          <a href="/" target="_blank" className="btn btn-primary">Logout</a>
+          <a href="/" target="_blank" className="btn btn-primary">
+            Logout
+          </a>
         </div>
         <div className="menu-extras">
           <div className="menu-item">

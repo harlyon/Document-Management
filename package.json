@@ -13,6 +13,7 @@
     "apollo-link-http": "^1.5.17",
     "chart.js": "^2.9.3",
     "jwt-decode": "^3.0.0-beta.2",
+    "prettier": "^2.1.2",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.10.0",
     "react-dom": "^16.13.1",
@@ -23,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "eslintConfig": {
     "extends": "react-app"
