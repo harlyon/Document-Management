@@ -48,4 +48,4 @@ Requests to protected routes are validated using the generated token.
 
 ## How users can get started with the project
 
-- By clicking on the [Production app]()
+- To be published soon
