@@ -63,7 +63,7 @@ const Sidebar = () => {
             </div>
             <div className="col-6 mt-4 pt-2">
               <a
-                href="auth-login-three.html"
+                href="/"
                 className="accounts rounded d-block shadow text-center py-3"
               >
                 <span className="pro-icons h3 text-muted">
