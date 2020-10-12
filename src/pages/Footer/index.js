@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../../assets/logo.png";
+// import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
+      {/* <footer className="footer">
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
@@ -33,7 +33,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            {/*end col*/}
             <div className="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
               <h4 className="text-light footer-head">Useful Links</h4>
               <ul className="list-unstyled footer-list mt-4">
@@ -50,7 +49,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            {/*end col*/}
             <div className="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
               <h4 className="text-light footer-head">Newsletter</h4>
               <p className="mt-4">
@@ -88,7 +86,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
       <footer className="footer footer-bar">
         <div className="container text-center">
           <div className="row align-items-center">

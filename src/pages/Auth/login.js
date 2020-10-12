@@ -1,7 +1,40 @@
-import React from "react";
+import React, { useContext, useState } from 'react';
+import { useMutation } from '@apollo/react-hooks';
 import login from "../../assets/login.jpg";
+import { AuthContext } from '../../context/auth';
+import { useForm } from '../../utils/formHooks';
+import { LOGIN_USER } from '../../graphql/mutations/login';
 
-const Login = () => {
+const Login = (props) => {
+  const context = useContext(AuthContext);
+  const [errors, setErrors] = useState({});
+
+  const { onChange, onSubmit, values } = useForm(loginUserCallback, {
+    username: '',
+    password: ''
+  });
+
+  const [loginUser, { loading }] = useMutation(LOGIN_USER, {
+    update(
+      _,
+      {
+        data: { login: userData }
+      }
+    ) {
+      context.login(userData);
+      props.history.push('/dashboard');
+    },
+    onError(err) {
+      setErrors(err.graphQLErrors[0].extensions.exception.errors);
+      console.log(err.graphQLErrors[0].extensions.exception.errors)
+    },
+    variables: values
+  });
+
+  function loginUserCallback() {
+    loginUser();
+  }
+
   return (
     <section className="cover-user bg-white">
       <div className="container-fluid px-0">
@@ -16,7 +49,7 @@ const Login = () => {
                   >
                     <div className="card-body p-0">
                       <h4 className="card-title text-center">Login</h4>
-                      <form className="login-form mt-4">
+                      <form onSubmit={onSubmit}>
                         <div className="row">
                           <div className="col-lg-12">
                             <div className="form-group position-relative">
@@ -25,11 +58,13 @@ const Login = () => {
                                 <span className="text-danger">*</span>
                               </label>
                               <input
-                                type="email"
                                 className="form-control"
                                 placeholder="Username"
                                 name="username"
-                                required
+                                type="text"
+                                value={values.username}
+                                error={errors.username ? true : false}
+                                onChange={onChange}
                               />
                             </div>
                           </div>
@@ -42,7 +77,10 @@ const Login = () => {
                                 type="password"
                                 className="form-control"
                                 placeholder="Password"
-                                required
+                                name="password"
+                                value={values.password}
+                                error={errors.password ? true : false}
+                                onChange={onChange}
                               />
                             </div>
                           </div>
@@ -74,8 +112,9 @@ const Login = () => {
                             </div>
                           </div>
                           <div className="col-lg-12 mb-0">
-                            <button className="btn btn-primary btn-block">
-                              Sign in
+                            <button type="submit" className="btn btn-primary btn-block">
+                              Sign in {" "}
+                              {loading && (<span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>)}
                             </button>
                           </div>
                           <div className="col-12 text-center">
@@ -92,6 +131,18 @@ const Login = () => {
                             </p>
                           </div>
                         </div>
+                        <br />
+                        {Object.keys(errors).length > 0 && (
+                        <div className="pt-10">
+                          <ul>
+                            {Object.values(errors).map((value) => (
+                              <li style={{color: 'red'}} key={value}>
+                                {value}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                       </form>
                     </div>
                   </div>
