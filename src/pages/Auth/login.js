@@ -1,33 +1,29 @@
-import React, { useContext, useState } from 'react';
-import { useMutation } from '@apollo/react-hooks';
+import React, { useContext, useState } from "react";
+import { useMutation } from "@apollo/react-hooks";
 import login from "../../assets/login.jpg";
-import { AuthContext } from '../../context/auth';
-import { useForm } from '../../utils/formHooks';
-import { LOGIN_USER } from '../../graphql/mutations/login';
+import { AuthContext } from "../../context/auth";
+import { useForm } from "../../utils/formHooks";
+import { LOGIN_USER } from "../../graphql/mutations/login";
+import Toast from "../../components/toast";
 
 const Login = (props) => {
   const context = useContext(AuthContext);
   const [errors, setErrors] = useState({});
 
   const { onChange, onSubmit, values } = useForm(loginUserCallback, {
-    username: '',
-    password: ''
+    username: "",
+    password: "",
   });
 
   const [loginUser, { loading }] = useMutation(LOGIN_USER, {
-    update(
-      _,
-      {
-        data: { login: userData }
-      }
-    ) {
+    update(_, { data: { login: userData } }) {
       context.login(userData);
-      props.history.push('/dashboard');
+      props.history.push("/dashboard");
     },
     onError(err) {
       setErrors(err.graphQLErrors[0].extensions.exception.errors);
     },
-    variables: values
+    variables: values,
   });
 
   function loginUserCallback() {
@@ -111,9 +107,18 @@ const Login = (props) => {
                             </div>
                           </div>
                           <div className="col-lg-12 mb-0">
-                            <button type="submit" className="btn btn-primary btn-block">
-                              Sign in {" "}
-                              {loading && (<span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>)}
+                            <button
+                              type="submit"
+                              className="btn btn-primary btn-block"
+                            >
+                              Sign in{" "}
+                              {loading && (
+                                <span
+                                  className="spinner-border spinner-border-sm"
+                                  role="status"
+                                  aria-hidden="true"
+                                ></span>
+                              )}
                             </button>
                           </div>
                           <div className="col-12 text-center">
@@ -132,16 +137,16 @@ const Login = (props) => {
                         </div>
                         <br />
                         {Object.keys(errors).length > 0 && (
-                        <div className="pt-10">
-                          <ul>
-                            {Object.values(errors).map((value) => (
-                              <li style={{color: 'red'}} key={value}>
-                                {value}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+                          <div className="pt-10">
+                            <ul>
+                              {Object.values(errors).map((value) => (
+                                <li style={{ color: "red" }} key={value}>
+                                  {value}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
                       </form>
                     </div>
                   </div>
@@ -149,6 +154,7 @@ const Login = (props) => {
               </div>
             </div>
           </div>
+          {context.user && <Toast successMessage="Successfully Logged In!" />}
           <div
             className="col-lg-8 offset-lg-4 padding-less img order-1"
             style={{ backgroundImage: `url(${login})` }}

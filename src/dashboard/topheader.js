@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import avatar from "../assets/avatar.jpg";
 import background from "../assets/background.png";
+import { AuthContext } from "../context/auth";
 
 const TopHeader = () => {
+  const { user } = useContext(AuthContext);
+  console.log(user);
   return (
     <section
       className="bg-profile d-table w-100 pt-0"

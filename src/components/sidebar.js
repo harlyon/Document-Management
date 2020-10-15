@@ -30,7 +30,7 @@ const Sidebar = () => {
             </div>
             <div className="col-6 mt-4 pt-2">
               <a
-                href="account-works.html"
+                href="/private"
                 className="accounts rounded d-block shadow text-center py-3"
               >
                 <span className="pro-icons h3 text-muted">
@@ -41,7 +41,7 @@ const Sidebar = () => {
             </div>
             <div className="col-6 mt-4 pt-2">
               <a
-                href="account-works.html"
+                href="public"
                 className="accounts rounded d-block shadow text-center py-3"
               >
                 <span className="pro-icons h3 text-muted">
@@ -52,7 +52,7 @@ const Sidebar = () => {
             </div>
             <div className="col-6 mt-4 pt-2">
               <a
-                href="account-messages.html"
+                href="/create"
                 className="accounts rounded d-block shadow text-center py-3"
               >
                 <span className="pro-icons h3 text-muted">

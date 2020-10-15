@@ -1,9 +1,9 @@
 import React from "react";
-import Dashboard from "./dashboard";
-import Sidebar from "../components/sidebar";
-import TopHeader from "./topheader";
+import Sidebar from "../../../components/sidebar";
+import TopHeader from "../../topheader";
+import CreateDocument from "./document";
 
-const DashboardIndex = () => {
+const CreateDocumentIndex = () => {
   return (
     <>
       <TopHeader />
@@ -11,7 +11,7 @@ const DashboardIndex = () => {
         <div className="container mt-lg-3">
           <div className="row">
             <Sidebar />
-            <Dashboard />
+            <CreateDocument />
           </div>
         </div>
       </section>
@@ -19,4 +19,4 @@ const DashboardIndex = () => {
   );
 };
 
-export default DashboardIndex;
+export default CreateDocumentIndex;

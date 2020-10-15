@@ -1,5 +1,5 @@
 import React from "react";
-import Chart from "./charts";
+import Chart from "../components/charts";
 
 const Dashboard = () => {
   return (
@@ -13,6 +13,12 @@ const Dashboard = () => {
             <a href="/">
               <div className="card rounded shadow bg-light border-0">
                 <div className="card-body">
+                  <img
+                    src="http://shreethemes.in/landrick/layouts/images/payments/payment/master.png"
+                    height={60}
+                    className="text-right"
+                    alt=""
+                  />
                   <div className="mt-4">
                     <h5 className="text-dark">4559</h5>
                     <div className="d-flex justify-content-between">
@@ -27,6 +33,12 @@ const Dashboard = () => {
             <a href="/">
               <div className="card rounded shadow bg-light border-0">
                 <div className="card-body">
+                  <img
+                    src="http://shreethemes.in/landrick/layouts/images/payments/payment/master.png"
+                    height={60}
+                    className="text-right"
+                    alt=""
+                  />
                   <div className="mt-4">
                     <h5 className="text-dark">458</h5>
                     <div className="d-flex justify-content-between">
