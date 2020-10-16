@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
-import { useMutation } from '@apollo/react-hooks';
-import { AuthContext } from '../../context/auth';
-import { useForm } from '../../utils/formHooks';
+import React, { useContext, useState } from "react";
+import { useMutation } from "@apollo/react-hooks";
+import { AuthContext } from "../../context/auth";
+import { useForm } from "../../utils/formHooks";
 import register from "../../assets/register.jpg";
 import { REGISTER_USER } from "../../graphql/mutations/register";
 
@@ -10,26 +10,21 @@ const Register = (props) => {
   const [errors, setErrors] = useState({});
 
   const { onChange, onSubmit, values } = useForm(registerUser, {
-    username: '',
-    email: '',
-    password: '',
-    confirmPassword: ''
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
   });
 
   const [addUser, { loading }] = useMutation(REGISTER_USER, {
-    update(
-      _,
-      {
-        data: { register: userData }
-      }
-    ) {
+    update(_, { data: { register: userData } }) {
       context.login(userData);
-      props.history.push('/login');
+      props.history.push("/login");
     },
     onError(err) {
       setErrors(err.graphQLErrors[0].extensions.exception.errors);
     },
-    variables: values
+    variables: values,
   });
 
   function registerUser() {
@@ -59,7 +54,7 @@ const Register = (props) => {
                                 <span className="text-danger">*</span>
                               </label>
                               <input
-                                type="email"
+                                type="text"
                                 className="form-control"
                                 placeholder="Username"
                                 name="username"
@@ -105,7 +100,8 @@ const Register = (props) => {
                           <div className="col-md-12">
                             <div className="form-group position-relative">
                               <label>
-                                Confirm Password <span className="text-danger">*</span>
+                                Confirm Password{" "}
+                                <span className="text-danger">*</span>
                               </label>
                               <input
                                 type="password"
@@ -140,8 +136,14 @@ const Register = (props) => {
                           </div>
                           <div className="col-md-12">
                             <button className="btn btn-primary btn-block">
-                              Register {" "}
-                              {loading && (<span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>)}
+                              Register{" "}
+                              {loading && (
+                                <span
+                                  className="spinner-border spinner-border-sm"
+                                  role="status"
+                                  aria-hidden="true"
+                                ></span>
+                              )}
                             </button>
                           </div>
                           <div className="mx-auto">
@@ -160,16 +162,16 @@ const Register = (props) => {
                         </div>
                         <br />
                         {Object.keys(errors).length > 0 && (
-                        <div className="pt-10">
-                          <ul>
-                            {Object.values(errors).map((value) => (
-                              <li style={{color: 'red'}} key={value}>
-                                {value}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+                          <div className="pt-10">
+                            <ul>
+                              {Object.values(errors).map((value) => (
+                                <li style={{ color: "red" }} key={value}>
+                                  {value}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
                       </form>
                     </div>
                   </div>
