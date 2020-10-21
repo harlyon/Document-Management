@@ -4,6 +4,7 @@ import { AuthContext } from "../../context/auth";
 import { useForm } from "../../utils/formHooks";
 import register from "../../assets/register.jpg";
 import { REGISTER_USER } from "../../graphql/mutations/register";
+import Toast from "../../components/toast";
 
 const Register = (props) => {
   const context = useContext(AuthContext);
@@ -179,9 +180,14 @@ const Register = (props) => {
               </div>
             </div>
           </div>
+          {context.user && (
+            <Toast successMessage="Account Registered Successfully!" />
+          )}
           <div
             className="col-lg-8 offset-lg-4 padding-less img order-1"
-            style={{ backgroundImage: `url(${register})` }}
+            style={{
+              backgroundImage: `url(${"http://shreethemes.in/landrick/layouts/images/contact.svg"})`,
+            }}
             data-jarallax='{"speed": 0.5}'
           />
         </div>

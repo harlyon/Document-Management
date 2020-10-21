@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../context/auth";
 
 const Sidebar = () => {
+  const { logout } = useContext(AuthContext);
+
   return (
     <div className="col-lg-4 col-md-6 col-12 d-lg-block d-none">
       <div className="sidebar sticky-bar p-4 rounded shadow">
@@ -65,6 +68,7 @@ const Sidebar = () => {
               <a
                 href="/"
                 className="accounts rounded d-block shadow text-center py-3"
+                onClick={logout}
               >
                 <span className="pro-icons h3 text-muted">
                   <i className="fa fa-arrow-circle-o-right" />
@@ -73,46 +77,6 @@ const Sidebar = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div className="widget mt-4 pt-2">
-          <h5 className="widget-title">My Socials :</h5>
-          <ul className="list-unstyled social-icon mb-0 mt-4">
-            <li className="list-inline-item mr-2">
-              <a href="/" className="rounded">
-                <i data-feather="facebook" className="fa fa-facebook" />
-              </a>
-            </li>
-            <li className="list-inline-item mr-2">
-              <a href="/" className="rounded">
-                <i data-feather="instagram" className="fa fa-instagram" />
-              </a>
-            </li>
-            <li className="list-inline-item mr-2">
-              <a href="/" className="rounded">
-                <i data-feather="twitter" className="fa fa-twitter" />
-              </a>
-            </li>
-            <li className="list-inline-item mr-2">
-              <a href="/" className="rounded">
-                <i data-feather="linkedin" className="fa fa-linkedin" />
-              </a>
-            </li>
-            <li className="list-inline-item mr-2">
-              <a href="/" className="rounded">
-                <i data-feather="github" className="fa fa-github" />
-              </a>
-            </li>
-            <li className="list-inline-item mr-2">
-              <a href="/" className="rounded">
-                <i data-feather="youtube" className="fa fa-youtube" />
-              </a>
-            </li>
-            <li className="list-inline-item mr-2">
-              <a href="/" className="rounded">
-                <i data-feather="gitlab" className="fa fa-github" />
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

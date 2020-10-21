@@ -6,7 +6,7 @@ const data = {
   datasets: [
     {
       label: "Public dataset",
-      backgroundColor: "#2f55d4",
+      backgroundColor: "#2443AC",
       borderColor: "#333",
       borderWidth: 1,
       hoverBackgroundColor: "#2f55d4",
@@ -15,7 +15,7 @@ const data = {
     },
     {
       label: "Private dataset",
-      backgroundColor: "#000",
+      backgroundColor: "#EB3732",
       borderColor: "#333",
       borderWidth: 1,
       hoverBackgroundColor: "#000",

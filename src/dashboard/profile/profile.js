@@ -84,6 +84,11 @@ const Profile = () => {
                   </a>
                 </div>
               </div>
+              <div className="mt-4 pt-2">
+                <a href="/register" className="btn btn-primary mt-2 mr-2">
+                  Edit your profile
+                </a>
+              </div>
             </div>
           </div>
         </div>
