@@ -8,7 +8,7 @@ const Main = () => {
         <div className="row justify-content-center mt-5">
           <div className="col-lg-7 col-md-7 text-center">
             <img
-              src={header}
+              src={"https://jeos.zupshop.in/assets/images/about-2.png"}
               className="img-fluid"
               style={{ maxHeight: "400px" }}
               alt=""

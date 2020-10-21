@@ -4,12 +4,12 @@ import "react-toastify/dist/ReactToastify.css";
 
 toast.configure();
 
-const Toast = ({ successMessage }: any) => {
+const Toast = ({ successMessage }) => {
   return (
     <div>
       {toast.success(successMessage, {
         position: toast.POSITION.TOP_CENTER,
-        style: { backgroundColor: "#4C995B" },
+        style: { backgroundColor: "#2443AC" },
       })}
     </div>
   );

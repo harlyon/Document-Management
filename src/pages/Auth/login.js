@@ -157,7 +157,9 @@ const Login = (props) => {
           {context.user && <Toast successMessage="Successfully Logged In!" />}
           <div
             className="col-lg-8 offset-lg-4 padding-less img order-1"
-            style={{ backgroundImage: `url(${login})` }}
+            style={{
+              backgroundImage: `url(${"http://shreethemes.in/landrick/layouts/images/contact.svg"})`,
+            }}
             data-jarallax='{"speed": 0.5}'
           />
         </div>

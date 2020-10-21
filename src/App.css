@@ -4,6 +4,19 @@
   padding: 0px 0 0px !important;
 }
 
+.bg-profile .public-profile {
+  top: 50px !important;
+}
+
+.form {
+  width: -webkit-fill-available;
+}
+
+.section {
+  padding: 20px 0 !important;
+  position: relative;
+}
+
 #topnav {
   display: none;
 }
